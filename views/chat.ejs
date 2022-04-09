@@ -1,0 +1,16 @@
+<div>
+    <% let user=pseudo.pseudo%>
+        <h1>bienvenue <%= user %>
+        </h1>
+        <div>
+            <div id="content_message">
+
+            </div>
+            <div>
+                <input type="text" placeholder="qu'avez vous a dire <%= user %> ?" name="content">
+                <input type="hidden" name="pseudo" value="<%= user %> ">
+                <input type="submit" value="envoyer">
+            </div>
+        </div>
+        <script src="/index.js" defer></script>
+</div>
